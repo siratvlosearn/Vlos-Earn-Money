@@ -1,0 +1,6 @@
+{
+  "name": "VLOS EARN",
+  "description": "Premium YouTube Creator-inspired earning platform with high-security task engine, video ads, referral network, multi-currency support, and dual user/admin portals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

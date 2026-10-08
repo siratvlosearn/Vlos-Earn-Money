@@ -1,0 +1,575 @@
+{
+  "users": [
+    {
+      "id": "usr_09b55b70a42d",
+      "name": "Alex Tester",
+      "email": "alex.tester@example.com",
+      "password": "AlexPass123!",
+      "phone": "",
+      "profilePhoto": "https://api.dicebear.com/7.x/identicon/svg?seed=alex.tester@example.com",
+      "coins": 500,
+      "balanceUsd": 0.5,
+      "todayEarnings": 500,
+      "totalEarnings": 500,
+      "referralEarnings": 0,
+      "completedTasksCount": 0,
+      "availableWithdrawalBalance": 500,
+      "pendingWithdrawal": 0,
+      "referralCode": "VLOS3463",
+      "referredBy": "usr_creator_1",
+      "totalReferrals": 0,
+      "activeReferrals": 0,
+      "status": "active",
+      "currency": "USD",
+      "createdAt": "2026-10-08T00:44:26.952Z"
+    },
+    {
+      "id": "usr_creator_1",
+      "name": "Sirat Tuba",
+      "email": "sirattuba.official@gmail.com",
+      "password": "Sirat@2026$!",
+      "phone": "+880 1712 345678",
+      "profilePhoto": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+      "coins": 2550,
+      "balanceUsd": 2.45,
+      "todayEarnings": 240,
+      "totalEarnings": 3990,
+      "referralEarnings": 750,
+      "completedTasksCount": 14,
+      "availableWithdrawalBalance": 2550,
+      "pendingWithdrawal": 0,
+      "referralCode": "VLOS2026",
+      "referredBy": null,
+      "totalReferrals": 5,
+      "activeReferrals": 4,
+      "status": "active",
+      "currency": "USD",
+      "createdAt": "2026-02-15T10:30:00Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_1",
+      "name": "Visit YouTube Creator Monetization Hub",
+      "description": "Explore the latest 2026 Creator Monetization guidelines, watch rules, and payout tiers.",
+      "category": "Website Visit",
+      "url": "https://support.google.com/youtube/answer/72851",
+      "reward": 60,
+      "rewardCurrency": "Coins",
+      "timer": 30,
+      "countdownDuration": 10,
+      "dailyLimit": 3,
+      "totalLimit": 5000,
+      "completionsCount": 842,
+      "instructions": "Wait for the mandatory 10-second countdown to complete. Once the task starts, review the site for at least 30 seconds before submitting verification.",
+      "status": "active",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "task_2",
+      "name": "Follow VLØS EARN Official Creator Network",
+      "description": "Stay updated on new high-yield earning campaigns, weekly bonus codes, and instant withdrawal windows.",
+      "category": "Social Follow",
+      "url": "https://youtube.com",
+      "reward": 120,
+      "rewardCurrency": "Coins",
+      "timer": 20,
+      "countdownDuration": 10,
+      "dailyLimit": 1,
+      "totalLimit": 10000,
+      "completionsCount": 1940,
+      "instructions": "Begin the 10-second countdown. Follow the channel and confirm your handle upon completion.",
+      "status": "active",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "task_3",
+      "name": "Review Daily Fintech Intelligence Digest",
+      "description": "Read the top tech and crypto finance headlines to discover emerging payment methods and Web3 earning rails.",
+      "category": "Website Visit",
+      "url": "https://news.ycombinator.com",
+      "reward": 50,
+      "rewardCurrency": "Coins",
+      "timer": 25,
+      "countdownDuration": 10,
+      "dailyLimit": 2,
+      "totalLimit": 3000,
+      "completionsCount": 654,
+      "instructions": "Do not close the page before the 10s countdown reaches 0. Spend 25 seconds browsing the articles.",
+      "status": "active",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "task_4",
+      "name": "Like & Engage with YouTube Creator Studio Video",
+      "description": "Engage with creator community tips and algorithmic optimization videos.",
+      "category": "Social Like",
+      "url": "https://youtube.com",
+      "reward": 80,
+      "rewardCurrency": "Coins",
+      "timer": 20,
+      "countdownDuration": 10,
+      "dailyLimit": 2,
+      "totalLimit": 4000,
+      "completionsCount": 1120,
+      "instructions": "10s pre-start countdown enforced. Watch and like the video, then collect your coins.",
+      "status": "active",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "task_5",
+      "name": "Test Decentralized TON Web3 Wallet Demo",
+      "description": "Experience instant micro-transactions on The Open Network with zero latency.",
+      "category": "App Install",
+      "url": "https://ton.org/wallets",
+      "reward": 250,
+      "rewardCurrency": "Coins",
+      "timer": 45,
+      "countdownDuration": 10,
+      "dailyLimit": 1,
+      "totalLimit": 1500,
+      "completionsCount": 395,
+      "instructions": "Complete 10s start countdown. Open the wallet portal and explore the feature set for 45 seconds.",
+      "status": "active",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31"
+    }
+  ],
+  "taskCompletions": [],
+  "ads": [
+    {
+      "id": "ad_1",
+      "title": "VLØS Creator Studio 2026 Launch Trailer",
+      "description": "Discover how top digital creators manage multibank payouts and instant sponsor brand deals.",
+      "thumbnail": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": 30,
+      "reward": 50,
+      "rewardCurrency": "Coins",
+      "dailyLimit": 5,
+      "viewsCount": 3410,
+      "status": "active"
+    },
+    {
+      "id": "ad_2",
+      "title": "High-Frequency Fintech Payments & Web3 Gateways",
+      "description": "Learn about automated cross-border settlements with bKash, RedotPay, and Tonkeeper.",
+      "thumbnail": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": 25,
+      "reward": 40,
+      "rewardCurrency": "Coins",
+      "dailyLimit": 5,
+      "viewsCount": 2890,
+      "status": "active"
+    },
+    {
+      "id": "ad_3",
+      "title": "Digital Creator Economy & Micro-Task Revolution",
+      "description": "How modern digital earners maximize daily yields through structured online activities.",
+      "thumbnail": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "duration": 20,
+      "reward": 35,
+      "rewardCurrency": "Coins",
+      "dailyLimit": 5,
+      "viewsCount": 4120,
+      "status": "active"
+    }
+  ],
+  "adCompletions": [],
+  "currencies": [
+    {
+      "id": "curr_usd",
+      "code": "USD",
+      "symbol": "$",
+      "name": "US Dollar",
+      "exchangeRateToUSD": 1,
+      "coinConversionRate": 1000,
+      "minWithdrawal": 5,
+      "maxWithdrawal": 1000,
+      "withdrawalFeePercent": 1.5,
+      "status": "enabled"
+    },
+    {
+      "id": "curr_bdt",
+      "code": "BDT",
+      "symbol": "৳",
+      "name": "Bangladeshi Taka",
+      "exchangeRateToUSD": 121.5,
+      "coinConversionRate": 8.23,
+      "minWithdrawal": 500,
+      "maxWithdrawal": 50000,
+      "withdrawalFeePercent": 1.85,
+      "status": "enabled"
+    },
+    {
+      "id": "curr_inr",
+      "code": "INR",
+      "symbol": "₹",
+      "name": "Indian Rupee",
+      "exchangeRateToUSD": 86.8,
+      "coinConversionRate": 11.52,
+      "minWithdrawal": 400,
+      "maxWithdrawal": 40000,
+      "withdrawalFeePercent": 1.5,
+      "status": "enabled"
+    },
+    {
+      "id": "curr_eur",
+      "code": "EUR",
+      "symbol": "€",
+      "name": "Euro",
+      "exchangeRateToUSD": 0.92,
+      "coinConversionRate": 1087,
+      "minWithdrawal": 5,
+      "maxWithdrawal": 1000,
+      "withdrawalFeePercent": 1.5,
+      "status": "enabled"
+    },
+    {
+      "id": "curr_gbp",
+      "code": "GBP",
+      "symbol": "£",
+      "name": "British Pound",
+      "exchangeRateToUSD": 0.78,
+      "coinConversionRate": 1282,
+      "minWithdrawal": 5,
+      "maxWithdrawal": 1000,
+      "withdrawalFeePercent": 1.5,
+      "status": "enabled"
+    },
+    {
+      "id": "curr_rub",
+      "code": "RUB",
+      "symbol": "₽",
+      "name": "Russian Ruble",
+      "exchangeRateToUSD": 93.4,
+      "coinConversionRate": 10.7,
+      "minWithdrawal": 500,
+      "maxWithdrawal": 50000,
+      "withdrawalFeePercent": 2,
+      "status": "enabled"
+    },
+    {
+      "id": "curr_ton",
+      "code": "TON",
+      "symbol": "TON",
+      "name": "Toncoin (Web3)",
+      "exchangeRateToUSD": 0.2,
+      "coinConversionRate": 5000,
+      "minWithdrawal": 1,
+      "maxWithdrawal": 500,
+      "withdrawalFeePercent": 0.5,
+      "status": "enabled"
+    }
+  ],
+  "paymentMethods": [
+    {
+      "id": "pm_bkash",
+      "name": "bKash",
+      "icon": "Smartphone",
+      "currency": "BDT",
+      "minWithdrawal": 500,
+      "maxWithdrawal": 25000,
+      "withdrawalFee": 1.85,
+      "feeType": "percentage",
+      "status": "enabled",
+      "instructions": "Enter your 11-digit bKash Personal or Agent mobile number. Payouts are reviewed and approved within 2-6 hours.",
+      "requiredFields": [
+        {
+          "fieldId": "accountNumber",
+          "label": "bKash Account Number",
+          "placeholder": "01XXXXXXXXX",
+          "type": "text",
+          "required": true
+        },
+        {
+          "fieldId": "accountType",
+          "label": "Account Type",
+          "placeholder": "Personal / Agent",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "pm_nagad",
+      "name": "Nagad",
+      "icon": "Wallet",
+      "currency": "BDT",
+      "minWithdrawal": 500,
+      "maxWithdrawal": 25000,
+      "withdrawalFee": 1.5,
+      "feeType": "percentage",
+      "status": "enabled",
+      "instructions": "Enter your registered Nagad wallet number. Processing window: 9 AM - 11 PM UTC+6.",
+      "requiredFields": [
+        {
+          "fieldId": "accountNumber",
+          "label": "Nagad Account Number",
+          "placeholder": "01XXXXXXXXX",
+          "type": "text",
+          "required": true
+        },
+        {
+          "fieldId": "accountType",
+          "label": "Account Type",
+          "placeholder": "Personal",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "pm_bank",
+      "name": "Bank Transfer",
+      "icon": "Building2",
+      "currency": "USD",
+      "minWithdrawal": 25,
+      "maxWithdrawal": 5000,
+      "withdrawalFee": 2,
+      "feeType": "flat",
+      "status": "enabled",
+      "instructions": "Direct wire or local bank deposit. Ensure the account name matches your verified identity.",
+      "requiredFields": [
+        {
+          "fieldId": "bankName",
+          "label": "Bank Name",
+          "placeholder": "e.g. Chase / Standard Chartered",
+          "type": "text",
+          "required": true
+        },
+        {
+          "fieldId": "accountName",
+          "label": "Account Holder Name",
+          "placeholder": "Full Name as on Bank Account",
+          "type": "text",
+          "required": true
+        },
+        {
+          "fieldId": "accountNumber",
+          "label": "Account Number / IBAN",
+          "placeholder": "Account Number or IBAN",
+          "type": "text",
+          "required": true
+        },
+        {
+          "fieldId": "branchName",
+          "label": "Branch / Routing / SWIFT",
+          "placeholder": "Branch Name or SWIFT Code",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "pm_paypal",
+      "name": "PayPal",
+      "icon": "Send",
+      "currency": "USD",
+      "minWithdrawal": 10,
+      "maxWithdrawal": 1000,
+      "withdrawalFee": 2.5,
+      "feeType": "percentage",
+      "status": "enabled",
+      "instructions": "Global PayPal transfer. Funds will be sent directly to your PayPal account email.",
+      "requiredFields": [
+        {
+          "fieldId": "paypalEmail",
+          "label": "PayPal Email",
+          "placeholder": "yourname@example.com",
+          "type": "email",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "pm_redotpay",
+      "name": "RedotPay",
+      "icon": "CreditCard",
+      "currency": "USD",
+      "minWithdrawal": 5,
+      "maxWithdrawal": 1000,
+      "withdrawalFee": 1,
+      "feeType": "percentage",
+      "status": "enabled",
+      "instructions": "Instant RedotPay crypto card wallet transfer using your RedotPay User ID or registered email.",
+      "requiredFields": [
+        {
+          "fieldId": "redotpayId",
+          "label": "RedotPay User ID or Email",
+          "placeholder": "e.g. 10293847 or email@domain.com",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "pm_tonkeeper",
+      "name": "Tonkeeper (TON)",
+      "icon": "Coins",
+      "currency": "TON",
+      "minWithdrawal": 1,
+      "maxWithdrawal": 500,
+      "withdrawalFee": 0.05,
+      "feeType": "flat",
+      "status": "enabled",
+      "instructions": "Native The Open Network (TON) blockchain transfer. Paste your non-custodial Tonkeeper address.",
+      "requiredFields": [
+        {
+          "fieldId": "tonAddress",
+          "label": "TON Wallet Address",
+          "placeholder": "EQ... or UQ...",
+          "type": "text",
+          "required": true
+        },
+        {
+          "fieldId": "memo",
+          "label": "Comment / Memo (Optional)",
+          "placeholder": "Leave blank if personal wallet",
+          "type": "text",
+          "required": false
+        }
+      ]
+    }
+  ],
+  "withdrawals": [],
+  "transactions": [
+    {
+      "id": "tx_e4fc7f1d-8900-44e1-a649-c67bcb4d751e",
+      "userId": "usr_09b55b70a42d",
+      "type": "Bonus",
+      "amount": 500,
+      "currency": "Coins",
+      "status": "Completed",
+      "description": "Welcome onboard bonus credited (500 Coins)",
+      "createdAt": "2026-10-08T00:44:26.952Z"
+    },
+    {
+      "id": "tx_4bc2b2aa-cc24-44d9-9377-b92d5acbe59c",
+      "userId": "usr_creator_1",
+      "type": "Referral Reward",
+      "amount": 100,
+      "currency": "Coins",
+      "status": "Completed",
+      "description": "Referral reward for inviting Alex Tester",
+      "createdAt": "2026-10-08T00:44:26.952Z"
+    },
+    {
+      "id": "tx_welcome",
+      "userId": "usr_creator_1",
+      "type": "Bonus",
+      "amount": 500,
+      "currency": "Coins",
+      "status": "Completed",
+      "description": "Welcome onboard bonus credited",
+      "createdAt": "2026-02-15T10:30:00Z"
+    },
+    {
+      "id": "tx_task1",
+      "userId": "usr_creator_1",
+      "type": "Task Reward",
+      "amount": 120,
+      "currency": "Coins",
+      "status": "Completed",
+      "description": "Completed: Follow VLØS EARN Official Channel",
+      "createdAt": "2026-03-01T14:22:00Z"
+    },
+    {
+      "id": "tx_ref1",
+      "userId": "usr_creator_1",
+      "type": "Referral Reward",
+      "amount": 100,
+      "currency": "Coins",
+      "status": "Completed",
+      "description": "Referral signup reward from user Alex99",
+      "createdAt": "2026-03-02T09:15:00Z"
+    }
+  ],
+  "referrals": [
+    {
+      "id": "ref_0963deb0-bd3a-49fa-8efe-d0a3ed284062",
+      "referrerId": "usr_creator_1",
+      "referredUserId": "usr_09b55b70a42d",
+      "referredUserName": "Alex Tester",
+      "bonusCoins": 100,
+      "status": "qualified",
+      "createdAt": "2026-10-08T00:44:26.952Z"
+    },
+    {
+      "id": "ref_1",
+      "referrerId": "usr_creator_1",
+      "referredUserId": "usr_ref_1",
+      "referredUserName": "Alex Johnson",
+      "bonusCoins": 100,
+      "status": "qualified",
+      "createdAt": "2026-03-02T09:15:00Z"
+    },
+    {
+      "id": "ref_2",
+      "referrerId": "usr_creator_1",
+      "referredUserId": "usr_ref_2",
+      "referredUserName": "Maria Silva",
+      "bonusCoins": 100,
+      "status": "qualified",
+      "createdAt": "2026-03-03T11:40:00Z"
+    },
+    {
+      "id": "ref_3",
+      "referrerId": "usr_creator_1",
+      "referredUserId": "usr_ref_3",
+      "referredUserName": "Tanvir Hossain",
+      "bonusCoins": 100,
+      "status": "active",
+      "createdAt": "2026-03-04T16:10:00Z"
+    }
+  ],
+  "notices": [
+    {
+      "id": "not_1",
+      "title": "Welcome to VLØS EARN Platform",
+      "message": "We have upgraded all task rewards! Enjoy instant task verification with our 10-second security countdown, fast withdrawals via bKash, Nagad, Bank, PayPal, RedotPay, and Tonkeeper, plus 10% lifetime referral commissions.",
+      "type": "popup",
+      "status": "active",
+      "buttonText": "Start Earning Now",
+      "buttonUrl": "#tasks",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31"
+    }
+  ],
+  "adminAuditLogs": [
+    {
+      "id": "log_init",
+      "adminId": "vlosearnbusiness",
+      "targetUserId": "SYSTEM",
+      "targetUserName": "Platform Initialization",
+      "action": "SYSTEM_BOOT",
+      "previousBalance": 0,
+      "newBalance": 0,
+      "amountChanged": 0,
+      "reason": "VLOS EARN production environment initialized",
+      "createdAt": "2026-10-08T00:44:15.317Z"
+    }
+  ],
+  "settings": {
+    "appName": "VLOS EARN",
+    "logoText": "VLØS EARN",
+    "appDescription": "Premium Creator & Digital Earning Platform",
+    "maintenanceMode": false,
+    "registrationEnabled": true,
+    "taskSystemEnabled": true,
+    "videoSystemEnabled": true,
+    "referralSystemEnabled": true,
+    "fixedReferralCoins": 100,
+    "referralCommissionPercent": 10,
+    "minReferralQualifyingTasks": 2,
+    "maxReferralCommission": 5000,
+    "coinToUsdRate": 1000,
+    "defaultTaskCountdownSeconds": 10
+  }
+}

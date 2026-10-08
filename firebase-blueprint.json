@@ -1,0 +1,236 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile, balance, coins, and referral tracking",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 100 },
+        "email": { "type": "string", "maxLength": 128 },
+        "phone": { "type": "string", "maxLength": 30 },
+        "profilePhoto": { "type": "string", "maxLength": 500 },
+        "coins": { "type": "number" },
+        "balanceUsd": { "type": "number" },
+        "todayEarnings": { "type": "number" },
+        "totalEarnings": { "type": "number" },
+        "referralEarnings": { "type": "number" },
+        "completedTasksCount": { "type": "number" },
+        "availableWithdrawalBalance": { "type": "number" },
+        "pendingWithdrawal": { "type": "number" },
+        "referralCode": { "type": "string", "maxLength": 20 },
+        "referredBy": { "type": "string", "maxLength": 128 },
+        "totalReferrals": { "type": "number" },
+        "activeReferrals": { "type": "number" },
+        "status": { "type": "string", "enum": ["active", "suspended"] },
+        "currency": { "type": "string", "maxLength": 10 },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "name", "email", "coins", "status", "createdAt"]
+    },
+    "Task": {
+      "title": "Task",
+      "description": "Earning task created by platform administrators",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 150 },
+        "description": { "type": "string", "maxLength": 1000 },
+        "category": { "type": "string", "maxLength": 50 },
+        "url": { "type": "string", "maxLength": 500 },
+        "reward": { "type": "number" },
+        "rewardCurrency": { "type": "string", "maxLength": 20 },
+        "timer": { "type": "number" },
+        "countdownDuration": { "type": "number" },
+        "dailyLimit": { "type": "number" },
+        "totalLimit": { "type": "number" },
+        "completionsCount": { "type": "number" },
+        "instructions": { "type": "string", "maxLength": 2000 },
+        "status": { "type": "string", "enum": ["active", "disabled"] },
+        "startDate": { "type": "string" },
+        "endDate": { "type": "string" }
+      },
+      "required": ["id", "name", "category", "reward", "timer", "status"]
+    },
+    "TaskCompletion": {
+      "title": "TaskCompletion",
+      "description": "Log of completed task by user",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "taskId": { "type": "string", "maxLength": 128 },
+        "taskName": { "type": "string", "maxLength": 150 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "reward": { "type": "number" },
+        "completedAt": { "type": "string" }
+      },
+      "required": ["id", "taskId", "userId", "reward", "completedAt"]
+    },
+    "VideoAd": {
+      "title": "VideoAd",
+      "description": "Video advertisement available for watch-and-earn",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 150 },
+        "description": { "type": "string", "maxLength": 500 },
+        "thumbnail": { "type": "string", "maxLength": 500 },
+        "videoUrl": { "type": "string", "maxLength": 500 },
+        "duration": { "type": "number" },
+        "reward": { "type": "number" },
+        "rewardCurrency": { "type": "string", "maxLength": 20 },
+        "dailyLimit": { "type": "number" },
+        "viewsCount": { "type": "number" },
+        "status": { "type": "string", "enum": ["active", "disabled"] }
+      },
+      "required": ["id", "title", "videoUrl", "duration", "reward", "status"]
+    },
+    "WithdrawalRequest": {
+      "title": "WithdrawalRequest",
+      "description": "Payout requests submitted by users for admin processing",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "userName": { "type": "string", "maxLength": 100 },
+        "userEmail": { "type": "string", "maxLength": 128 },
+        "methodId": { "type": "string", "maxLength": 128 },
+        "methodName": { "type": "string", "maxLength": 100 },
+        "currency": { "type": "string", "maxLength": 10 },
+        "coinsDeducted": { "type": "number" },
+        "amount": { "type": "number" },
+        "fee": { "type": "number" },
+        "finalAmount": { "type": "number" },
+        "status": { "type": "string", "enum": ["Pending", "Approved", "Rejected", "Paid"] },
+        "rejectionReason": { "type": "string", "maxLength": 500 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "userId", "methodName", "amount", "status", "createdAt"]
+    },
+    "Transaction": {
+      "title": "Transaction",
+      "description": "Ledger of all coin credits, debits, withdrawals, and adjustments",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "type": { "type": "string", "maxLength": 50 },
+        "amount": { "type": "number" },
+        "currency": { "type": "string", "maxLength": 10 },
+        "status": { "type": "string", "enum": ["Completed", "Pending", "Reversed"] },
+        "description": { "type": "string", "maxLength": 250 },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "userId", "type", "amount", "status", "createdAt"]
+    },
+    "Currency": {
+      "title": "Currency",
+      "description": "Multi-currency configurations and exchange rates",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "code": { "type": "string", "maxLength": 10 },
+        "symbol": { "type": "string", "maxLength": 10 },
+        "name": { "type": "string", "maxLength": 50 },
+        "exchangeRateToUSD": { "type": "number" },
+        "coinConversionRate": { "type": "number" },
+        "minWithdrawal": { "type": "number" },
+        "maxWithdrawal": { "type": "number" },
+        "withdrawalFeePercent": { "type": "number" },
+        "status": { "type": "string", "enum": ["enabled", "disabled"] }
+      },
+      "required": ["id", "code", "symbol", "name", "exchangeRateToUSD", "coinConversionRate", "status"]
+    },
+    "WithdrawalMethod": {
+      "title": "WithdrawalMethod",
+      "description": "Configurable payout gateways including bKash, Nagad, Bank, PayPal, RedotPay, Tonkeeper",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 50 },
+        "currency": { "type": "string", "maxLength": 10 },
+        "minWithdrawal": { "type": "number" },
+        "maxWithdrawal": { "type": "number" },
+        "withdrawalFee": { "type": "number" },
+        "feeType": { "type": "string", "enum": ["flat", "percentage"] },
+        "status": { "type": "string", "enum": ["enabled", "disabled"] },
+        "instructions": { "type": "string", "maxLength": 1000 }
+      },
+      "required": ["id", "name", "status"]
+    },
+    "Notice": {
+      "title": "Notice",
+      "description": "Platform announcement, modal popup, or promotional banner",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 150 },
+        "message": { "type": "string", "maxLength": 1000 },
+        "type": { "type": "string", "enum": ["popup", "announcement", "banner"] },
+        "status": { "type": "string", "enum": ["active", "disabled"] }
+      },
+      "required": ["id", "title", "message", "type", "status"]
+    },
+    "AdminAuditLog": {
+      "title": "AdminAuditLog",
+      "description": "Immutable log of administrative actions, balance edits, and reversals",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "adminId": { "type": "string", "maxLength": 128 },
+        "targetUserId": { "type": "string", "maxLength": 128 },
+        "targetUserName": { "type": "string", "maxLength": 100 },
+        "action": { "type": "string", "maxLength": 100 },
+        "previousBalance": { "type": "number" },
+        "newBalance": { "type": "number" },
+        "amountChanged": { "type": "number" },
+        "reason": { "type": "string", "maxLength": 500 },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "adminId", "action", "reason", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profiles and wallet state"
+    },
+    "/tasks/{taskId}": {
+      "schema": "Task",
+      "description": "Earning tasks defined by administrators"
+    },
+    "/taskCompletions/{completionId}": {
+      "schema": "TaskCompletion",
+      "description": "Verified task completions"
+    },
+    "/ads/{adId}": {
+      "schema": "VideoAd",
+      "description": "Available video advertisements"
+    },
+    "/withdrawals/{withdrawalId}": {
+      "schema": "WithdrawalRequest",
+      "description": "User withdrawal payout tickets"
+    },
+    "/transactions/{transactionId}": {
+      "schema": "Transaction",
+      "description": "Complete financial and coin transaction ledger"
+    },
+    "/currencies/{currencyId}": {
+      "schema": "Currency",
+      "description": "Supported fiat and crypto currency exchange definitions"
+    },
+    "/withdrawalMethods/{methodId}": {
+      "schema": "WithdrawalMethod",
+      "description": "Payout gateways and field requirements"
+    },
+    "/notices/{noticeId}": {
+      "schema": "Notice",
+      "description": "Platform alerts, banners, and modal popups"
+    },
+    "/adminAuditLogs/{logId}": {
+      "schema": "AdminAuditLog",
+      "description": "Immutable audit trails for administrative overrides"
+    }
+  }
+}
